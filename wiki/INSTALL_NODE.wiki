@@ -4,26 +4,3 @@
 You can download NODE installers for WINDOWS, LINUX and MAC OS X here: http://nodejs.org/download/
 
 You can download NODE source here: http://nodejs.org/download/
-
-<code language="xml">
-# install development tools
-sudo apt-get update && sudo apt-get install build-essential
-
-# install node
-wget http://nodejs.org/dist/v0.8.14/node-v0.8.14.tar.gz
-tar xvzf node-v0.8.14.tar.gz
-cd node-v0.8.14
-./configure
-make
-sudo make install
-cd ..
-echo 'export PATH=$HOME/local/node/bin:$PATH' >> ~/.profile 
-echo 'export NODE_PATH=$HOME/local/node:$HOME/local/node/lib/node_modules' >> ~/.profile 
-source ~/.profile
-node -v
-sudo ln -s /usr/local/bin/node /usr/bin/node
-sudo ln -s /usr/local/lib/node /usr/lib/node
-sudo ln -s /usr/local/bin/npm /usr/bin/npm
-sudo ln -s /usr/local/bin/node-waf /usr/bin/node-waf
-sudo node -v
-</code>
