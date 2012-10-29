@@ -6,14 +6,36 @@
   * [INSTALL_NODE install NODE >= 0.8.0]
 
 ==Installation==
-  * unzip JAP_REMOTE_NODE-X.X.X.zip
-  * open JAP_REMOTE_NODE-X.X.X
-  * [CONFIGURE_JAP configure JAP_REMOTE_NODE.json.js]
-    * REMOTE_PROXY_SERVER.TYPE (type of REMOTE_PROXY_SERVER, "HTTP" or "HTTPS")
-    * REMOTE_PROXY_SERVER.ADDRESS
-    * REMOTE_PROXY_SERVER.PORT
-    * REMOTE_PROXY_SERVER.AUTHENTICATION`[`X`]`.USERNAME
-    * REMOTE_PROXY_SERVER.AUTHENTICATION`[`X`]`.PASSWORD
-    * REMOTE_PROXY_SERVER.CERTIFICATE.KEY.FILE (CK.pem of REMOTE_PROXY_SERVER if type of REMOTE_PROXY_SERVER is "HTTPS")
-    * REMOTE_PROXY_SERVER.CERTIFICATE.FILE (C.pem of REMOTE_PROXY_SERVER if type of REMOTE_PROXY_SERVER is "HTTPS")
-  * execute JAP_REMOTE_NODE.bat
+  * "HTTP" REMOTE_PROXY_SERVER
+    * unzip JAP_REMOTE_NODE-X.X.X.zip
+    * open JAP_REMOTE_NODE-X.X.X
+    * configure JAP_REMOTE_NODE.json.js
+      * REMOTE_PROXY_SERVER.TYPE = "HTTP"
+      * REMOTE_PROXY_SERVER.ADDRESS
+      * REMOTE_PROXY_SERVER.PORT
+      * REMOTE_PROXY_SERVER.AUTHENTICATION`[`X`]`.USERNAME
+      * REMOTE_PROXY_SERVER.AUTHENTICATION`[`X`]`.PASSWORD
+    * execute JAP_REMOTE_NODE.bat
+  * "HTTPS" REMOTE_PROXY_SERVER
+    * unzip JAP_REMOTE_NODE-X.X.X.zip
+    * open JAP_REMOTE_NODE-X.X.X
+    * execute CA.bat
+    * configure C.ini
+      * countryName_default
+      * stateOrProvinceName_default
+      * localityName_default
+      * organizationName_default
+      * organizationalUnitName_default
+      * commonName_default = IP or DNS of REMOTE_PROXY_SERVER
+      * DNS.1 = DNS of REMOTE_PROXY_SERVER
+      * IP.1 = IP of REMOTE_PROXY_SERVER
+    * execute C.bat
+    * configure JAP_REMOTE_NODE.json.js
+      * REMOTE_PROXY_SERVER.TYPE = "HTTPS"
+      * REMOTE_PROXY_SERVER.ADDRESS
+      * REMOTE_PROXY_SERVER.PORT
+      * REMOTE_PROXY_SERVER.AUTHENTICATION`[`X`]`.USERNAME
+      * REMOTE_PROXY_SERVER.AUTHENTICATION`[`X`]`.PASSWORD
+      * REMOTE_PROXY_SERVER.CERTIFICATE.KEY.FILE = "CK.pem"
+      * REMOTE_PROXY_SERVER.CERTIFICATE.FILE = "C.pem"
+    * execute JAP_REMOTE_NODE.bat
