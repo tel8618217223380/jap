@@ -1,6 +1,6 @@
 #summary install JAP_LOCAL_NODE
 
-= Install JAP_LOCAL_NODE=
+=Install JAP_LOCAL_NODE=
 
 ==Pre-installation==
   * [INSTALL_NODE install NODE >= 0.8.0]
