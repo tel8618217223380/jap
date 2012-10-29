@@ -9,7 +9,7 @@
 ==Installation==
   * unzip JAP_REMOTE_NODE_DOTCLOUD-X.X.X.zip
   * open JAP_REMOTE_NODE_DOTCLOUD-X.X.X
-  * configure JAP_REMOTE_NODE.json.js
+  * configure JAP_REMOTE_NODE.json.js  ([EXAMPLES examples])
     * REMOTE_PROXY_SERVER.TYPE = "HTTP"
     * REMOTE_PROXY_SERVER.ADDRESS = ""
     * REMOTE_PROXY_SERVER.PORT = 8080
