@@ -6,7 +6,7 @@
   * [INSTALL_NODE install NODE >= 0.8.0]
 
 ==Installation==
-  * "HTTP" REMOTE_PROXY_SERVER
+  * HTTP
     * unzip JAP_REMOTE_NODE-X.X.X.zip
     * open JAP_REMOTE_NODE-X.X.X
     * configure JAP_REMOTE_NODE.json.js ([EXAMPLES examples])
@@ -16,7 +16,7 @@
       * REMOTE_PROXY_SERVER.AUTHENTICATION`[`X`]`.USERNAME
       * REMOTE_PROXY_SERVER.AUTHENTICATION`[`X`]`.PASSWORD
     * execute JAP_REMOTE_NODE.bat
-  * "HTTPS" REMOTE_PROXY_SERVER
+  * HTTPS
     * unzip JAP_REMOTE_NODE-X.X.X.zip
     * open JAP_REMOTE_NODE-X.X.X
     * execute CA.bat
