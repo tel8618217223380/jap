@@ -1,0 +1,2 @@
+=Install NODE=
+You can download NODE v0.8 for WINDOWS, LINUX and MAC OS X here: http://nodejs.org/download/
