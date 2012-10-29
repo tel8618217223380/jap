@@ -30,7 +30,7 @@
       * DNS.1 = DNS of REMOTE_PROXY_SERVER
       * IP.1 = IP of REMOTE_PROXY_SERVER
     * execute C.bat
-    * configure JAP_REMOTE_NODE.json.js
+    * configure JAP_REMOTE_NODE.json.js ([EXAMPLES examples])
       * REMOTE_PROXY_SERVER.TYPE = "HTTPS"
       * REMOTE_PROXY_SERVER.ADDRESS
       * REMOTE_PROXY_SERVER.PORT
