@@ -15,7 +15,7 @@ sudo ln -s /usr/local/lib/node /usr/lib/node
 sudo ln -s /usr/local/bin/npm /usr/bin/npm 
 sudo ln -s /usr/local/bin/node-waf /usr/bin/node-waf 
 sudo node -v 
-#install JAP_REMOTE_NODE 
+# install JAP_REMOTE_NODE 
 wget http://jap.googlecode.com/files/JAP_REMOTE_NODE-0.2.0.zip 
 unzip JAP_REMOTE_NODE-0.2.0.zip 
 cd JAP_REMOTE_NODE-0.2.0 
