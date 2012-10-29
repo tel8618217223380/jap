@@ -1,0 +1,43 @@
+#summary install VPS
+
+=Install VPS=
+<pre>
+# install NODE
+wget http://nodejs.org/dist/v0.8.14/node-v0.8.14.tar.gz
+tar xvzf node-v0.8.14.tar.gz
+cd node-v0.8.14
+./configure
+make
+sudo make install
+cd ..
+sudo ln -s /usr/local/bin/node /usr/bin/node
+sudo ln -s /usr/local/lib/node /usr/lib/node
+sudo ln -s /usr/local/bin/npm /usr/bin/npm
+sudo ln -s /usr/local/bin/node-waf /usr/bin/node-waf
+sudo node -v
+#install JAP_REMOTE_NODE
+wget http://jap.googlecode.com/files/JAP_REMOTE_NODE-0.2.0.zip 
+unzip JAP_REMOTE_NODE-0.2.0.zip
+cd JAP_REMOTE_NODE-0.2.0
+# generate certificate
+rm CAK.pem
+rm CA.pem
+rm CA.srl
+openssl genrsa -des3 -out CAK.pem 2048
+openssl req -new -x509 -days 3650 -key CAK.pem -out CA.pem -config CA.ini
+rm CK.pem
+rm CR.pem
+rm C.pem
+# configure C.ini
+nano C.ini
+openssl genrsa -out CK.pem 1024
+openssl req -new -key CK.pem -out CR.pem -config C.ini
+openssl x509 -req -in CR.pem -out C.pem -CA CA.pem -CAkey CAK.pem -CAcreateserial -days 3650 -extensions v3_req -extfile C.ini
+# configure JAP_REMOTE_NODE.json.js
+nano JAP_REMOTE_NODE.json.js
+# start JAP_REMOTE_NODE
+sudo nohup node JAP_REMOTE_NODE.js &
+# stop JAP_REMOTE_NODE
+# ps -ef
+# kill -9 <id>
+</pre>
