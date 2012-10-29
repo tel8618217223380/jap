@@ -8,7 +8,7 @@
 ==Installation==
   * unzip JAP_LOCAL_NODE-X.X.X.zip
   * open JAP_LOCAL_NODE-X.X.X
-  * configure JAP_LOCAL_NODE.json.js
+  * configure JAP_LOCAL_NODE.json.js ([EXAMPLES examples])
     * LOCAL_PROXY_SERVER.ADDRESS
     * LOCAL_PROXY_SERVER.PORT
     * "HTTP" REMOTE_PROXY_SERVER 
