@@ -189,7 +189,7 @@ module.exports =
 }
 }}}
 
-==Example 4: LOCAL_PROXY_SERVER --- INTERNET --- PROXY_SERVER (DOTCLOUD) --- REMOTE_PROXY_SERVER (HTTPS)==
+==Example 4: LOCAL_PROXY_SERVER --- INTERNET --- PROXY_SERVER (DOTCLOUD) --- REMOTE_PROXY_SERVER (HTTP)==
 JAP_LOCAL_NODE.json.js
 {{{
 module.exports = 
