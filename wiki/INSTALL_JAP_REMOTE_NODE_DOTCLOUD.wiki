@@ -9,7 +9,7 @@
 ==Installation==
   * unzip JAP_REMOTE_NODE_DOTCLOUD-X.X.X.zip
   * open JAP_REMOTE_NODE_DOTCLOUD-X.X.X
-  * configure JAP_REMOTE_NODE.json.js ([EXAMPLES examples])
+  * configure JAP_REMOTE_NODE.json.js ([EXAMPLES examples] - example 4)
     * REMOTE_PROXY_SERVER.TYPE = "HTTP"
     * REMOTE_PROXY_SERVER.ADDRESS = ""
     * REMOTE_PROXY_SERVER.PORT = 8080
@@ -17,5 +17,5 @@
     * REMOTE_PROXY_SERVER.AUTHENTICATION`[`X`]`.PASSWORD
   * open CONSOLE
     * $ cd JAP_REMOTE_NODE_DOTCLOUD-X.X.X
-    * $ dotcloud create `<ApplicationId>`
-    * $ dotcloud push `<ApplicationId>`
+    * $ dotcloud create APPLICATION-ID
+    * $ dotcloud push APPLICATION-ID
