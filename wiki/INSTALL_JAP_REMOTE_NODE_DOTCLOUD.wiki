@@ -3,7 +3,7 @@
 =Install JAP_REMOTE_NODE_DOTCLOUD=
 
 ==Pre-installation==
-  * create [https://www.dotcloud.com/ dotCloud] account
+  * create [https://www.dotcloud.com/ DOTCLOUD] account
   * install the [http://docs.dotcloud.com/0.4/firststeps/install/ CLI]
 
 ==Installation==
