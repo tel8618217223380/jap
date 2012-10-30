@@ -4,7 +4,7 @@
 
 ==Pre-installation==
   * create DOTCLOUD account (https://www.dotcloud.com/)
-  * install DOTCLOUD CLI
+  * install DOTCLOUD [http://docs.dotcloud.com/0.4/firststeps/install/ CLI]
 
 ==Installation==
   * unzip JAP_REMOTE_NODE_DOTCLOUD-X.X.X.zip
