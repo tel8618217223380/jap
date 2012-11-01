@@ -2,7 +2,7 @@
 
 =Examples=
 
-==Example 1: LOCAL_PROXY_SERVER --- INTERNET --- REMOTE_PROXY_SERVER (HTTP)==
+==Example 1: LOCAL_PROXY_SERVER (HTTP) --- INTERNET --- REMOTE_PROXY_SERVER (HTTP)==
 JAP_LOCAL_NODE.json.js
 {{{
 module.exports = 
@@ -51,7 +51,7 @@ module.exports =
 }
 }}}
 
-==Example 2: LOCAL_PROXY_SERVER --- INTERNET --- REMOTE_PROXY_SERVER (HTTPS)==
+==Example 2: LOCAL_PROXY_SERVER (HTTPS) --- INTERNET --- REMOTE_PROXY_SERVER (HTTPS)==
 JAP_LOCAL_NODE.json.js
 {{{
 module.exports = 
@@ -115,7 +115,7 @@ module.exports =
 }
 }}}
 
-==Example 3: LOCAL_PROXY_SERVER --- PROXY_SERVER --- INTERNET --- REMOTE_PROXY_SERVER (HTTPS)==
+==Example 3: LOCAL_PROXY_SERVER (HTTPS) --- PROXY_SERVER --- INTERNET --- REMOTE_PROXY_SERVER (HTTPS)==
 JAP_LOCAL_NODE.json.js
 {{{
 module.exports = 
@@ -189,7 +189,7 @@ module.exports =
 }
 }}}
 
-==Example 4: LOCAL_PROXY_SERVER --- INTERNET --- PROXY_SERVER (DOTCLOUD) --- REMOTE_PROXY_SERVER (HTTP)==
+==Example 4: LOCAL_PROXY_SERVER (HTTPS) --- INTERNET --- PROXY_SERVER (DOTCLOUD) --- REMOTE_PROXY_SERVER (HTTP)==
 JAP_LOCAL_NODE.json.js
 {{{
 module.exports = 
