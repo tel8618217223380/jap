@@ -4,7 +4,7 @@
 
 ==Pre-installation==
   * create [https://www.dotcloud.com/ DOTCLOUD] account
-  * install the [http://docs.dotcloud.com/0.4/firststeps/install/ CLI]
+  * install the [http://docs.dotcloud.com/0.9/firststeps/install/ CLI] [http://docs.dotcloud.com/0.9/guides/migration/ 0.9]
 
 ==Installation==
   * unzip JAP_REMOTE_NODE_DOTCLOUD-X.X.X.zip
