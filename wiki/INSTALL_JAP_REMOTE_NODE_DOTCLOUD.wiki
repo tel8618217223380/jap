@@ -18,4 +18,4 @@
   * open CONSOLE
     * $ cd JAP_REMOTE_NODE_DOTCLOUD-X.X.X
     * $ dotcloud create APPLICATION-ID
-    * $ dotcloud push APPLICATION-ID
+    * $ dotcloud push -A APPLICATION-ID
