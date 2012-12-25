@@ -12,7 +12,7 @@
  * DEPLOY
   * unzip JAP_REMOTE_×_DOTCLOUD-X.X.X.zip
   * open JAP_REMOTE_×_DOTCLOUD-X.X.X
-  * configure JAP_REMOTE_×.json× ([http://code.google.com/p/jap/wiki/EXAMPLES#Example_4:_LOCAL_PROXY_SERVER_%28HTTPS%29_---_INTERNET_---_PROXY_SER Example 4])
+  * configure JAP_REMOTE_×.json× ([EXAMPLES#Example_4 Example 4])
   * open CONSOLE
     * $ cd JAP_REMOTE_NODE_DOTCLOUD-X.X.X
     * $ dotcloud create APPLICATION-ID
@@ -28,7 +28,7 @@
  * DEPLOY
    * unzip JAP_WS_REMOTE_PYTHON_OPENSHIFT-X.X.X.zip
    * open JAP_WS_REMOTE_PYTHON_OPENSHIFT-X.X.X
-   * configure JAP_WS_REMOTE.json
+   * configure JAP_WS_REMOTE.json ([EXAMPLES#Example_5 Example 5])
    * open CONSOLE
      * rhc app create -a application-id -t diy-0.1
      * cd application-id
