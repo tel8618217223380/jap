@@ -1,6 +1,10 @@
 #summary JAP_WS_LOCAL
 #labels Phase-Deploy,Featured
 
+<wiki:comment>
+Jeroen, it is not finished yet. Feel free to change any things you think are inappropriate for any changes of WIKI can be recovered.
+</wiki:comment>
+
 = JAP_WS_LOCAL =
  * [JAP_WS_LOCAL#JAP_WS_LOCAL_PYTHON JAP_WS_LOCAL_PYTHON]
  * [JAP_WS_LOCAL#JAP_WS_LOCAL_NODE JAP_WS_LOCAL_NODE]
