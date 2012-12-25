@@ -237,3 +237,70 @@ module.exports =
 	}
 }
 }}}
+
+==Example 4: LOCAL_PROXY_SERVER (HTTPS) --- INTERNET --- PROXY_SERVER (OPENSHIFT) --- REMOTE_PROXY_SERVER (HTTP)==
+JAP_WS_REMOTE.json
+{{{
+{
+    "LOGGER":
+    {
+        "LEVEL": 10
+    },
+    "REMOTE_PROXY_SERVER":
+    {
+        "TYPE": "HTTPS",
+        "AUTHENTICATION":
+        [
+            {
+                "USERNAME": "1",
+                "PASSWORD": "1"
+            }
+        ]
+    }
+}
+}}}
+
+JAP_WS_LOCAL.json
+{{{
+{
+    "LOGGER":
+    {
+        "LEVEL": 10
+    },
+    "LOCAL_PROXY_SERVER":
+    {
+        "ADDRESS": "127.0.0.1",
+        "PORT": 1080
+    },
+    "REMOTE_PROXY_SERVERS":
+    [
+        {
+            "TYPE": "HTTPS",
+            "ADDRESS": "1-2.rhcloud.com",
+            "PORT": 8443,
+            "AUTHENTICATION":
+            {
+                "USERNAME": "1",
+                "PASSWORD": "1"
+            },
+            "CERTIFICATE":
+            {
+                "AUTHENTICATION":
+                {
+                    "FILE": ""
+                }
+            }
+        }
+    ],
+    "PROXY_SERVER":
+    {
+        "ADDRESS": "",
+        "PORT": 0,
+        "AUTHENTICATION":
+        {
+            "USERNAME": "",
+            "PASSWORD": ""
+        }
+    }
+}
+}}}
