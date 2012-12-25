@@ -1,4 +1,5 @@
 #summary JAP_WS_LOCAL
+#labels Phase-Deploy,Featured
 
 = JAP_WS_LOCAL =
  * [JAP_WS_LOCAL#JAP_WS_LOCAL_PYTHON JAP_WS_LOCAL_PYTHON]
