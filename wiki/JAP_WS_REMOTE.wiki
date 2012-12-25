@@ -1,0 +1,38 @@
+#summary JAP_WS_REMOTE
+
+= JAP_WS_REMOTE =
+
+== JAP_WS_REMOTE_DOTCLOUD ==
+ * PREPARATION
+  * create [https://www.dotcloud.com/ dotCloud] account
+  * install the [http://docs.dotcloud.com/0.9/firststeps/install/ CLI] [http://docs.dotcloud.com/0.9/guides/migration/ 0.9]
+ * DEPLOY
+  * unzip JAP_REMOTE_×_DOTCLOUD-X.X.X.zip
+  * open JAP_REMOTE_×_DOTCLOUD-X.X.X
+  * configure JAP_REMOTE_×.json× ([http://code.google.com/p/jap/wiki/EXAMPLES#Example_4:_LOCAL_PROXY_SERVER_%28HTTPS%29_---_INTERNET_---_PROXY_SER Example 4])
+  * open CONSOLE
+    * $ cd JAP_REMOTE_NODE_DOTCLOUD-X.X.X
+    * $ dotcloud create APPLICATION-ID
+    * $ dotcloud push -A APPLICATION-ID
+ * *ATTENTION*
+   * REMOTE_PROXY_SERVERS HTTP port=80
+   * REMOTE_PROXY_SERVERS HTTPS port=443
+
+== JAP_WS_REMOTE_OPENSHIFT ==
+ * PREPARATION
+   * create [https://openshift.redhat.com/app/ OpenShift] account
+   * install [https://openshift.redhat.com/community/get-started rhc]
+ * DEPLOY
+   * unzip JAP_WS_REMOTE_PYTHON_OPENSHIFT-X.X.X.zip
+   * open JAP_WS_REMOTE_PYTHON_OPENSHIFT-X.X.X
+   * configure JAP_WS_REMOTE.json
+   * open CONSOLE
+     * rhc app create -a application-id -t diy-0.1
+     * cd application-id
+     * xcopy ..\JAP_WS_REMOTE_PYTHON_OPENSHIFT-X.X.X\*.* /s
+     * git add -A
+     * git commit -m "JAP"
+     * git push
+ * *ATTENTION*
+   * REMOTE_PROXY_SERVERS HTTP port=8000
+   * REMOTE_PROXY_SERVERS HTTPS port=8443
