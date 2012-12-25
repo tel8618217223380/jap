@@ -1,11 +1,11 @@
 #summary examples
 
 =Examples=
- * [EXAMPLES# Example 1]
- * [EXAMPLES# Example 2]
- * [EXAMPLES# Example 3]
- * [EXAMPLES# Example 4]
- * [EXAMPLES# Example 5]
+ * [EXAMPLES#Example_1 Example 1]
+ * [EXAMPLES#Example_2 Example 2]
+ * [EXAMPLES#Example_3 Example 3]
+ * [EXAMPLES#Example_4 Example 4]
+ * [EXAMPLES#Example_5 Example 5]
 
 ==Example 1==
 
