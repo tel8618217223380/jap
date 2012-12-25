@@ -2,12 +2,9 @@
 
 = JAP_WS_LOCAL =
  * [JAP_WS_LOCAL#JAP_WS_LOCAL_PYTHON JAP_WS_LOCAL_PYTHON]
-   * PRE-INSTALLATION
-   * SETUP
  * [JAP_WS_LOCAL#JAP_WS_LOCAL_NODE JAP_WS_LOCAL_NODE]
-   * PRE-INSTALLATION
-   * SETUP
  * [JAP_WS_LOCAL#APPLY APPLY]
+
 == JAP_WS_LOCAL_PYTHON ==
 According to [https://github.com/jvansteirteghem/jap/blob/master/JAP_WS_LOCAL_PYTHON/README.txt README.txt].
 
@@ -19,7 +16,7 @@ According to [https://github.com/jvansteirteghem/jap/blob/master/JAP_WS_LOCAL_PY
  * SETUP
    * unzip JAP_WS_LOCAL_PYTHON-X.X.X.zip
    * open JAP_WS_LOCAL_PYTHON-X.X.X
-   * configure JAP_WS_LOCAL.json
+   * configure JAP_WS_LOCAL.json ([EXAMPLES examples])
    * execute JAP_WS_LOCAL.bat
 
 == JAP_WS_LOCAL_NODE ==
@@ -31,25 +28,6 @@ According to [https://github.com/jvansteirteghem/jap/blob/master/JAP_WS_LOCAL_NO
    * unzip JAP_LOCAL_NODE-X.X.X.zip
    * open JAP_LOCAL_NODE-X.X.X
    * configure JAP_LOCAL_NODE.json.js ([EXAMPLES examples])
-     * LOCAL_PROXY_SERVER.ADDRESS
-     * LOCAL_PROXY_SERVER.PORT
-     * HTTP 
-       * REMOTE_PROXY_SERVERS`[`X`]`.TYPE = "HTTP"
-       * REMOTE_PROXY_SERVERS`[`X`]`.ADDRESS
-       * REMOTE_PROXY_SERVERS`[`X`]`.PORT
-       * REMOTE_PROXY_SERVERS`[`X`]`.AUTHENTICATION.USERNAME
-       * REMOTE_PROXY_SERVERS`[`X`]`.AUTHENTICATION.PASSWORD
-     * HTTPS
-       * REMOTE_PROXY_SERVERS`[`X`]`.TYPE = "HTTPS"
-       * REMOTE_PROXY_SERVERS`[`X`]`.ADDRESS
-       * REMOTE_PROXY_SERVERS`[`X`]`.PORT
-       * REMOTE_PROXY_SERVERS`[`X`]`.AUTHENTICATION.USERNAME
-       * REMOTE_PROXY_SERVERS`[`X`]`.AUTHENTICATION.PASSWORD
-       * REMOTE_PROXY_SERVER.CERTIFICATE.AUTHENTICATION.FILE = "CA.pem"
-     * PROXY_SERVER.ADDRESS
-     * PROXY_SERVER.PORT
-     * PROXY_SERVER.AUTHENTICATION.USERNAME
-     * PROXY_SERVER.AUTHENTICATION.PASSWORD
    * execute JAP_LOCAL_NODE.bat
 
 == APPLY ==
