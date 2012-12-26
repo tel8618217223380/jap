@@ -15,9 +15,9 @@ According to [https://github.com/jvansteirteghem/jap/blob/master/JAP_WS_LOCAL_PY
 
  * PRE-INSTALLATION
    * install PYTHON ">= 2.7 & < 3.0"
-   * install TWISTED
-   * install PYOPENSSL
-   * install AUTOBAHN
+   * install [http://twistedmatrix.com/trac/wiki/Downloads TWISTED]
+   * install [http://pypi.python.org/pypi/pyOpenSSL PYOPENSSL]
+   * install [http://pypi.python.org/pypi/autobahn AUTOBAHN]
  * SETUP
    * unzip JAP_WS_LOCAL_PYTHON-X.X.X.zip
    * open JAP_WS_LOCAL_PYTHON-X.X.X
