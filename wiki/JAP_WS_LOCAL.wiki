@@ -16,6 +16,7 @@ According to [https://github.com/jvansteirteghem/jap/blob/master/JAP_WS_LOCAL_PY
  * PRE-INSTALLATION
    * install PYTHON ">= 2.7 & < 3.0"
    * install [http://twistedmatrix.com/trac/wiki/Downloads TWISTED]
+     * dependencies [http://pypi.python.org/pypi/zope.interface zope.interface]
    * install [http://pypi.python.org/pypi/pyOpenSSL PYOPENSSL]
    * install [http://pypi.python.org/pypi/autobahn AUTOBAHN]
  * SETUP
