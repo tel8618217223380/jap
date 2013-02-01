@@ -41,8 +41,9 @@ Jeroen, it is not finished yet. Feel free to change any things you think are ina
    * open CONSOLE
      # rhc app create -a application-id -t diy-0.1
      # cd application-id
-     # {{{xcopy ..\JAP_WS_REMOTE_PYTHON_OPENSHIFT-X.X.X\*.* /s}}}
-     # {{{chomd 755 .openshift/action_hooks/*}}} ### Windows users skip this step, details in issue 10
+     # {{{xcopy ..\JAP_WS_REMOTE_PYTHON_OPENSHIFT-X.X.X\*.* /s /y}}} ### only for Windows
+     # {{{cp -r ../JAP_WS_REMOTE_PYTHON_OPENSHIFT-X.X.X/. .}}} ### only for Linux
+     # {{{chmod -R +x ./.openshift/action_hooks ./JAP}}} ### only for Linux
      # git add -A
      # git commit -m "JAP"
      # git push
