@@ -157,7 +157,7 @@ JAP_LOCAL_WS.json
     "PROXY_SERVER":
     {
         "TYPE": "HTTP"
-        "ADDRESS": "1.2.3.4",
+        "ADDRESS": "4.3.2.1",
         "PORT": 8080,
         "AUTHENTICATION":
         {
