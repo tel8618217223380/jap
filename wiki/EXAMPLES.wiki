@@ -11,51 +11,49 @@
 
 *LOCAL_PROXY_SERVER (HTTP) --- INTERNET --- REMOTE_PROXY_SERVER (HTTP)*
 
-JAP_LOCAL_NODE.json.js
+JAP_LOCAL_WS.json
 {{{
-module.exports = 
 {
-	"LOCAL_PROXY_SERVER":
-	{
-		"ADDRESS": "127.0.0.1",
-		"PORT": 1080
-	},
-	"REMOTE_PROXY_SERVERS":
-	[
-		{
-			"TYPE": "HTTP",
-			"ADDRESS": "1.2.3.4",
-			"PORT": 8080,
-			"AUTHENTICATION":
-			{
-				"USERNAME": "1",
-				"PASSWORD": "1"
-			}
-		}
-	]
+    "LOCAL_PROXY_SERVER":
+    {
+        "ADDRESS": "127.0.0.1",
+        "PORT": 1080
+    },
+    "REMOTE_PROXY_SERVERS":
+    [
+        {
+            "TYPE": "HTTP",
+            "ADDRESS": "1.2.3.4",
+            "PORT": 8080,
+            "AUTHENTICATION":
+            {
+                "USERNAME": "1",
+                "PASSWORD": "1"
+            }
+        }
+    ]
 }
 }}}
 
-JAP_REMOTE_NODE.json.js
+JAP_REMOTE_WS.json
 {{{
-module.exports = 
 {
-	"REMOTE_PROXY_SERVER":
-	{
-		"TYPE": "HTTP",
-		"PORT": 8080,
-		"AUTHENTICATION":
-		[
-			{
-				"USERNAME": "1",
-				"PASSWORD": "1"
-			},
-			{
-				"USERNAME": "2",
-				"PASSWORD": "2"
-			}
-		]
-	}
+    "REMOTE_PROXY_SERVER":
+    {
+        "TYPE": "HTTP",
+        "PORT": 8080,
+        "AUTHENTICATION":
+        [
+            {
+                "USERNAME": "1",
+                "PASSWORD": "1"
+            },
+            {
+                "USERNAME": "2",
+                "PASSWORD": "2"
+            }
+        ]
+    }
 }
 }}}
 
@@ -63,66 +61,64 @@ module.exports =
 
 *LOCAL_PROXY_SERVER (HTTPS) --- INTERNET --- REMOTE_PROXY_SERVER (HTTPS)*
 
-JAP_LOCAL_NODE.json.js
+JAP_LOCAL_WS.json
 {{{
-module.exports = 
 {
-	"LOCAL_PROXY_SERVER":
-	{
-		"ADDRESS": "127.0.0.1",
-		"PORT": 1080
-	},
-	"REMOTE_PROXY_SERVERS":
-	[
-		{
-			"TYPE": "HTTPS",
-			"ADDRESS": "1.2.3.4",
-			"PORT": 8080,
-			"AUTHENTICATION":
-			{
-				"USERNAME": "1",
-				"PASSWORD": "1"
-			},
-			"CERTIFICATE":
-			{
-				"AUTHENTICATION":
-				{
-					"FILE": "CA.pem"
-				}
-			}
-		}
-	]
+    "LOCAL_PROXY_SERVER":
+    {
+        "ADDRESS": "127.0.0.1",
+        "PORT": 1080
+    },
+    "REMOTE_PROXY_SERVERS":
+    [
+        {
+            "TYPE": "HTTPS",
+            "ADDRESS": "1.2.3.4",
+            "PORT": 8080,
+            "AUTHENTICATION":
+            {
+                "USERNAME": "1",
+                "PASSWORD": "1"
+            },
+            "CERTIFICATE":
+            {
+                "AUTHENTICATION":
+                {
+                    "FILE": "CA.pem"
+                }
+            }
+        }
+    ]
 }
 }}}
 
-JAP_REMOTE_NODE.json.js
+JAP_REMOTE_WS.json
 {{{
-module.exports = 
 {
-	"REMOTE_PROXY_SERVER":
-	{
-		"TYPE": "HTTPS",
-		"PORT": 8080,
-		"AUTHENTICATION":
-		[
-			{
-				"USERNAME": "1",
-				"PASSWORD": "1"
-			},
-			{
-				"USERNAME": "2",
-				"PASSWORD": "2"
-			}
-		],
-		"CERTIFICATE":
-		{
-			"KEY":
-			{
-				"FILE": "CK.pem"
-			},
-			"FILE": "C.pem"
-		}
-	}
+    "REMOTE_PROXY_SERVER":
+    {
+        "TYPE": "HTTPS",
+        "PORT": 8080,
+        "AUTHENTICATION":
+        [
+            {
+                "USERNAME": "1",
+                "PASSWORD": "1"
+            },
+            {
+                "USERNAME": "2",
+                "PASSWORD": "2"
+            }
+        ],
+        "CERTIFICATE":
+        {
+            "KEY":
+            {
+                "FILE": "CK.pem"
+            },
+            "FILE": "C.pem"
+        }
+    }
 }
 }}}
 
@@ -130,76 +126,75 @@ module.exports =
 
 *LOCAL_PROXY_SERVER (HTTPS) --- PROXY_SERVER --- INTERNET --- REMOTE_PROXY_SERVER (HTTPS)*
 
-JAP_LOCAL_NODE.json.js
+JAP_LOCAL_WS.json
 {{{
-module.exports = 
 {
-	"LOCAL_PROXY_SERVER":
-	{
-		"ADDRESS": "127.0.0.1",
-		"PORT": 1080
-	},
-	"REMOTE_PROXY_SERVERS":
-	[
-		{
-			"TYPE": "HTTPS",
-			"ADDRESS": "1.2.3.4",
-			"PORT": 8080,
-			"AUTHENTICATION":
-			{
-				"USERNAME": "1",
-				"PASSWORD": "1"
-			},
-			"CERTIFICATE":
-			{
-				"AUTHENTICATION":
-				{
-					"FILE": "CA.pem"
-				}
-			}
-		}
-	],
-	"PROXY_SERVER":
-	{
-		"ADDRESS": "1.2.3.4",
-		"PORT": 8080,
-		"AUTHENTICATION":
-		{
-			"USERNAME": "1",
-			"PASSWORD": "1"
-		}
-	}
+    "LOCAL_PROXY_SERVER":
+    {
+        "ADDRESS": "127.0.0.1",
+        "PORT": 1080
+    },
+    "REMOTE_PROXY_SERVERS":
+    [
+        {
+            "TYPE": "HTTPS",
+            "ADDRESS": "1.2.3.4",
+            "PORT": 8080,
+            "AUTHENTICATION":
+            {
+                "USERNAME": "1",
+                "PASSWORD": "1"
+            },
+            "CERTIFICATE":
+            {
+                "AUTHENTICATION":
+                {
+                    "FILE": "CA.pem"
+                }
+            }
+        }
+    ],
+    "PROXY_SERVER":
+    {
+        "TYPE": "HTTP"
+        "ADDRESS": "1.2.3.4",
+        "PORT": 8080,
+        "AUTHENTICATION":
+        {
+            "USERNAME": "1",
+            "PASSWORD": "1"
+        }
+    }
 }
 }}}
 
-JAP_REMOTE_NODE.json.js
+JAP_REMOTE_WS.json
 {{{
-module.exports = 
 {
-	"REMOTE_PROXY_SERVER":
-	{
-		"TYPE": "HTTPS",
-		"PORT": 8080,
-		"AUTHENTICATION":
-		[
-			{
-				"USERNAME": "1",
-				"PASSWORD": "1"
-			},
-			{
-				"USERNAME": "2",
-				"PASSWORD": "2"
-			}
-		],
-		"CERTIFICATE":
-		{
-			"KEY":
-			{
-				"FILE": "CK.pem"
-			},
-			"FILE": "C.pem"
-		}
-	}
+    "REMOTE_PROXY_SERVER":
+    {
+        "TYPE": "HTTPS",
+        "PORT": 8080,
+        "AUTHENTICATION":
+        [
+            {
+                "USERNAME": "1",
+                "PASSWORD": "1"
+            },
+            {
+                "USERNAME": "2",
+                "PASSWORD": "2"
+            }
+        ],
+        "CERTIFICATE":
+        {
+            "KEY":
+            {
+                "FILE": "CK.pem"
+            },
+            "FILE": "C.pem"
+        }
+    }
 }
 }}}
 
@@ -207,51 +202,49 @@ module.exports =
 
 *LOCAL_PROXY_SERVER (HTTPS) --- INTERNET --- PROXY_SERVER (DOTCLOUD) --- REMOTE_PROXY_SERVER (HTTP)*
 
-JAP_LOCAL_NODE.json.js
+JAP_LOCAL_WS.json
 {{{
-module.exports = 
 {
-	"LOCAL_PROXY_SERVER":
-	{
-		"ADDRESS": "127.0.0.1",
-		"PORT": 1080
-	},
-	"REMOTE_PROXY_SERVERS":
-	[
-		{
-			"TYPE": "HTTPS",
-			"ADDRESS": "1-2.dotcloud.com",
-			"PORT": 443,
-			"AUTHENTICATION":
-			{
-				"USERNAME": "1",
-				"PASSWORD": "1"
-			}
-		}
-	]
+    "LOCAL_PROXY_SERVER":
+    {
+        "ADDRESS": "127.0.0.1",
+        "PORT": 1080
+    },
+    "REMOTE_PROXY_SERVERS":
+    [
+        {
+            "TYPE": "HTTPS",
+            "ADDRESS": "1-2.dotcloud.com",
+            "PORT": 443,
+            "AUTHENTICATION":
+            {
+                "USERNAME": "1",
+                "PASSWORD": "1"
+            }
+        }
+    ]
 }
 }}}
 
-JAP_REMOTE_NODE.json.js
+JAP_REMOTE_WS.json
 {{{
-module.exports = 
 {
-	"REMOTE_PROXY_SERVER":
-	{
-		"TYPE": "HTTP",
-		"PORT": 8080,
-		"AUTHENTICATION":
-		[
-			{
-				"USERNAME": "1",
-				"PASSWORD": "1"
-			},
-			{
-				"USERNAME": "2",
-				"PASSWORD": "2"
-			}
-		]
-	}
+    "REMOTE_PROXY_SERVER":
+    {
+        "TYPE": "HTTP",
+        "PORT": 8080,
+        "AUTHENTICATION":
+        [
+            {
+                "USERNAME": "1",
+                "PASSWORD": "1"
+            },
+            {
+                "USERNAME": "2",
+                "PASSWORD": "2"
+            }
+        ]
+    }
 }
 }}}
 
@@ -259,34 +252,9 @@ module.exports =
 
 *LOCAL_PROXY_SERVER (HTTPS) --- INTERNET --- PROXY_SERVER (OPENSHIFT) --- REMOTE_PROXY_SERVER (HTTP)*
 
-JAP_WS_REMOTE.json
+JAP_LOCAL_WS.json
 {{{
 {
-    "LOGGER":
-    {
-        "LEVEL": 10
-    },
-    "REMOTE_PROXY_SERVER":
-    {
-        "TYPE": "HTTPS",
-        "AUTHENTICATION":
-        [
-            {
-                "USERNAME": "1",
-                "PASSWORD": "1"
-            }
-        ]
-    }
-}
-}}}
-
-JAP_WS_LOCAL.json
-{{{
-{
-    "LOGGER":
-    {
-        "LEVEL": 10
-    },
     "LOCAL_PROXY_SERVER":
     {
         "ADDRESS": "127.0.0.1",
@@ -311,16 +279,23 @@ JAP_WS_LOCAL.json
                 }
             }
         }
-    ],
-    "PROXY_SERVER":
+    ]
+}
+}}}
+
+JAP_REMOTE_WS.json
+{{{
+{
+    "REMOTE_PROXY_SERVER":
     {
-        "ADDRESS": "",
-        "PORT": 0,
+        "TYPE": "HTTPS",
         "AUTHENTICATION":
-        {
-            "USERNAME": "",
-            "PASSWORD": ""
-        }
+        [
+            {
+                "USERNAME": "1",
+                "PASSWORD": "1"
+            }
+        ]
     }
 }
 }}}
