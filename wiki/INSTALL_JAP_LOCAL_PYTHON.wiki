@@ -10,8 +10,8 @@
 ==INSTALLATION==
   * unzip JAP_LOCAL_PYTHON-X.X.X.zip
   * open JAP_LOCAL_PYTHON-X.X.X
-  * configure JAP_LOCAL.json
+  * [CONFIGURE_JAP_LOCAL configure JAP_LOCAL.json]
   * execute JAP_LOCAL.bat
-  * [CONFIGURE_BROWSER configure browser]
+  * [CONFIGURE_BROWSER configure BROWSER]
 
 ==IMPORTANT==
