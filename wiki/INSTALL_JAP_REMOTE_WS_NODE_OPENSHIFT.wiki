@@ -9,7 +9,7 @@
 ==INSTALLATION==
   * unzip JAP_REMOTE_WS_NODE_OPENSHIFT-X.X.X.zip
   * open JAP_REMOTE_WS_NODE_OPENSHIFT-X.X.X
-  * configure JAP_REMOTE_WS.json
+  * [CONFIGURE_JAP_REMOTE_WS configure JAP_REMOTE_WS.json]
   * open CONSOLE
     * WINDOWS
       * rhc app create -a application-id -t nodejs-0.6
