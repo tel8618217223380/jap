@@ -1,4 +1,4 @@
-#summary install JAP_LOCAL_SSH_PYTHON.
+#summary install JAP_LOCAL_SSH_PYTHON
 
 =PRE-INSTALLATION=
   * install PYTHON >= 2.7.0
