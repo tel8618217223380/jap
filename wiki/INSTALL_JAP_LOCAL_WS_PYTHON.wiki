@@ -1,16 +1,18 @@
 #summary install JAP_LOCAL_WS_PYTHON
 
-=PRE-INSTALLATION=
+=JAP_LOCAL_WS_PYTHON=
+
+==PRE-INSTALLATION==
   * install PYTHON >= 2.7.0
   * install TWISTED
   * install PYOPENSSL
   * install AUTOBAHN
 
-=INSTALLATION=
+==INSTALLATION==
   * unzip JAP_LOCAL_WS_PYTHON-X.X.X.zip
   * open JAP_LOCAL_WS_PYTHON-X.X.X
   * configure JAP_LOCAL_WS.json
   * execute JAP_LOCAL_WS.bat
   * [CONFIGURE_BROWSER configure browser]
 
-=IMPORTANT=
+==IMPORTANT==
