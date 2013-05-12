@@ -1,4 +1,4 @@
-#summary configure browser
+#summary configure BROWSER
 
 open
   * FIREFOX
