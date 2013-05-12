@@ -1,15 +1,17 @@
 #summary install JAP_LOCAL_PYTHON
 
-=PRE-INSTALLATION=
+=JAP_LOCAL_PYTHON=
+
+==PRE-INSTALLATION==
   * install PYTHON >= 2.7.0
   * install TWISTED
   * install PYOPENSSL
 
-=INSTALLATION=
+==INSTALLATION==
   * unzip JAP_LOCAL_PYTHON-X.X.X.zip
   * open JAP_LOCAL_PYTHON-X.X.X
   * configure JAP_LOCAL.json
   * execute JAP_LOCAL.bat
   * [CONFIGURE_BROWSER configure browser]
 
-=IMPORTANT=
+==IMPORTANT==
