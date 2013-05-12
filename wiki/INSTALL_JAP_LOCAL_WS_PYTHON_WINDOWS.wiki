@@ -1,0 +1,14 @@
+#summary install JAP_LOCAL_WS_PYTHON_WINDOWS
+
+=JAP_LOCAL_WS_PYTHON_WINDOWS=
+
+==PRE-INSTALLATION==
+
+==INSTALLATION==
+  * unzip JAP_LOCAL_WS_PYTHON_WINDOWS-X.X.X.zip
+  * open JAP_LOCAL_WS_PYTHON_WINDOWS-X.X.X
+  * configure JAP_LOCAL_WS.json
+  * execute JAP_LOCAL_WS.bat
+  * [CONFIGURE_BROWSER configure browser]
+
+==IMPORTANT==
