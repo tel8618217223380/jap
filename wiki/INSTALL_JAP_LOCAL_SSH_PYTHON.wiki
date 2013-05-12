@@ -1,17 +1,19 @@
 #summary install JAP_LOCAL_SSH_PYTHON
 
-=PRE-INSTALLATION=
+=JAP_LOCAL_SSH_PYTHON=
+
+==PRE-INSTALLATION==
   * install PYTHON >= 2.7.0
   * install TWISTED
   * install PYOPENSSL
   * install PYCRYPTO
   * install PYASN1
 
-=INSTALLATION=
+==INSTALLATION==
   * unzip JAP_LOCAL_SSH_PYTHON-X.X.X.zip
   * open JAP_LOCAL_SSH_PYTHON-X.X.X
   * configure JAP_LOCAL_SSH.json
   * execute JAP_LOCAL_SSH.bat
   * [CONFIGURE_BROWSER configure browser]
 
-=IMPORTANT=
+==IMPORTANT==
