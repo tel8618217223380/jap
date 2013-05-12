@@ -286,6 +286,10 @@ JAP_REMOTE_WS.json
             {
                 "USERNAME": "1",
                 "PASSWORD": "1"
+            },
+            {
+                "USERNAME": "2",
+                "PASSWORD": "2"
             }
         ]
     }
