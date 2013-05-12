@@ -12,8 +12,8 @@
 ==INSTALLATION==
   * unzip JAP_LOCAL_SSH_PYTHON-X.X.X.zip
   * open JAP_LOCAL_SSH_PYTHON-X.X.X
-  * configure JAP_LOCAL_SSH.json
+  * [CONFIGURE_JAP_LOCAL_SSH configure JAP_LOCAL_SSH.json]
   * execute JAP_LOCAL_SSH.bat
-  * [CONFIGURE_BROWSER configure browser]
+  * [CONFIGURE_BROWSER configure BROWSER]
 
 ==IMPORTANT==
