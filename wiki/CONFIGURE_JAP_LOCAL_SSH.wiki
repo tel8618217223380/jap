@@ -12,14 +12,15 @@
     {
         "ADDRESS": "127.0.0.1",
         "PORT": 1080,
-        "KEYS":
+        "KEYS": 
         [
             {
-                "PUBLIC":
+                "PUBLIC": 
                 {
-                    "FILE": ""
+                    "FILE": "",
+                    "PASSPHRASE": ""
                 },
-                "PRIVATE":
+                "PRIVATE": 
                 {
                     "FILE": "",
                     "PASSPHRASE": ""
@@ -37,9 +38,9 @@
                 "USERNAME": "",
                 "PASSWORD": ""
             },
-            "KEY":
+            "KEY": 
             {
-                "AUTHENTICATION":
+                "AUTHENTICATION": 
                 {
                     "FINGERPRINT": ""
                 }
