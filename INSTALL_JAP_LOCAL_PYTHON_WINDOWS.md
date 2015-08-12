@@ -1,0 +1,12 @@
+# JAP\_LOCAL\_PYTHON\_WINDOWS #
+
+## PRE-INSTALLATION ##
+
+## INSTALLATION ##
+  * unzip JAP\_LOCAL\_PYTHON\_WINDOWS-X.X.X.zip
+  * open JAP\_LOCAL\_PYTHON\_WINDOWS-X.X.X
+  * [configure JAP\_LOCAL.json](CONFIGURE_JAP_LOCAL.md)
+  * execute JAP\_LOCAL.bat
+  * [configure BROWSER](CONFIGURE_BROWSER.md)
+
+## IMPORTANT ##

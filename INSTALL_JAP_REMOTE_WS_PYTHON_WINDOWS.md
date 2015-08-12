@@ -1,0 +1,11 @@
+# JAP\_REMOTE\_WS\_PYTHON\_WINDOWS #
+
+## PRE-INSTALLATION ##
+
+## INSTALLATION ##
+  * unzip JAP\_REMOTE\_WS\_PYTHON\_WINDOWS-X.X.X.zip
+  * open JAP\_REMOTE\_WS\_PYTHON\_WINDOWS-X.X.X
+  * [configure JAP\_REMOTE\_WS.json](CONFIGURE_JAP_REMOTE_WS.md)
+  * execute JAP\_REMOTE\_WS.bat
+
+## IMPORTANT ##

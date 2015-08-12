@@ -1,0 +1,13 @@
+# JAP\_REMOTE\_WS\_NODE\_MODULUS #
+
+## PRE-INSTALLATION ##
+  * create MODULUS account
+
+## INSTALLATION ##
+  * unzip JAP\_REMOTE\_WS\_NODE\_MODULUS-X.X.X.zip
+  * open JAP\_REMOTE\_WS\_NODE\_MODULUS-X.X.X
+  * [configure JAP\_REMOTE\_WS.json](CONFIGURE_JAP_REMOTE_WS.md)
+  * zip JAP\_REMOTE\_WS\_NODE\_MODULUS-X.X.X.zip
+  * upload JAP\_REMOTE\_WS\_NODE\_MODULUS-X.X.X.zip
+
+## IMPORTANT ##
